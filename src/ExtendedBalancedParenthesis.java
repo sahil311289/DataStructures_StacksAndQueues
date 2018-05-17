@@ -7,7 +7,7 @@ public class ExtendedBalancedParenthesis {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.next();
-        if (input.length() % 2 != 0) {
+        if (input.replaceAll("\\s+", "").length() % 2 != 0) {
             System.out.println(false);
             return;
         }
