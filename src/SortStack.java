@@ -11,7 +11,7 @@ public class SortStack {
         s1.push(val);
         while (val != 0) {
             val = scan.nextInt();
-            while (!s1.isEmpty() && s1.peek() > val) {
+            while (!s1.isEmpty() && s1.peek() < val) {
                 s2.push(s1.pop());
             }
             s1.push(val);
